@@ -25,3 +25,30 @@
 |차량|안드로이드|
 |--|--|
 |![차량](https://github.com/user-attachments/assets/53a661e4-7d08-42da-989e-169b54325579)|![안드로이드](https://github.com/user-attachments/assets/bc348165-383a-4c6b-a226-b7ff979427ac)| 
+
+- UWB 통신으로 보행자를 발견하면 지도에 보행자를 띄우고, 보행자가 차량으로 접근 할 경우 라즈베리파이 UI에 Alert
+- UWB 통신으로 보행자를 향해 달려오는 차량을 발견하면 안드로이드에 Alert
+
+  <br>
+
+## 결과 영상 링크 
+
+- 
+
+<br>
+
+## 시스템 구성도
+
+![시스템 구성도](https://github.com/user-attachments/assets/d08e80d2-735f-452e-80a7-c464e6cff90e)
+
+- 시스템은 Embedded System, Client-Server, Application으로 나뉜다.
+- Embedded System
+  - 외부 센서 : GPS 및 차량 양옆의 거리를 측정해줄 라이다
+  - 알람 센서 : 진동 센서 및 Alert를 띄울 Display
+  - Companion Computer : Embedded System의 통제를 담당하는 Raspberry pi
+  - UWB Module : 차량에 탑재되어 Android와 UWB 통신
+- Client-Server
+  - UI : Naver Map API를 통해 차량의 현재 위치와 보행자의 위치를 지도에 띄우고 충돌 감지시 Alert
+  - Server: REST API를 통해 데이터를 주고받을 수 있는 기능을 제공
+- Application
+  - Android : Jetpack 라이브러리를 이용한 Estimote SDK로 개발, 비콘과의 UWB 통신을 통해 차량 감지   
