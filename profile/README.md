@@ -51,4 +51,18 @@
   - UI : Naver Map API를 통해 차량의 현재 위치와 보행자의 위치를 지도에 띄우고 충돌 감지시 Alert
   - Server: REST API를 통해 데이터를 주고받을 수 있는 기능을 제공
 - Application
-  - Android : Jetpack 라이브러리를 이용한 Estimote SDK로 개발, 비콘과의 UWB 통신을 통해 차량 감지   
+  - Android : Jetpack 라이브러리를 이용한 Estimote SDK로 개발, 비콘과의 UWB 통신을 통해 차량 감지
+
+<br>
+
+## 작동 흐름도
+
+![작동 흐름도](https://github.com/user-attachments/assets/a4b3d897-dad1-447f-a5cb-ed6d30118271)
+
+## 팀원 소개
+
+|                                           팀장                                           |                                         팀원                                          |                                         팀원                                          |                                                                                     
+| :------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | 
+| <img src="https://github.com/user-attachments/assets/e4593759-cdc7-41c6-ad17-7bc376cbaba8" width=200px alt="이준호"/> | <img src="https://github.com/user-attachments/assets/ab14c911-fe5e-41c4-9c72-7bc30584ba3c" width=200px alt="이정원"/> | <img src="https://github.com/user-attachments/assets/0a7ec33f-0044-4552-a98e-132eae98942f" width=200px alt="윤정빈"/> |
+|                           이준호                          |                           이정원                            |                           윤정빈                            |
+|                           프로젝트 총괄 <br> 임베디드 소프트웨어 개발 <br> node.js 서버 개발                         |                           임베디드 소프트웨어 개발 <br> 차량용 디스플레이 UI 개발 <br> 안드로이드 어플리케이션 개발                            |                           임베디드 소프트웨어 개발 <br> 안드로이드 어플리케이션 개발 <br> 형상 관리                            |
